@@ -7,7 +7,25 @@ def selection_sort(arr):
         Args:
             arr(list): The list to be sorted
     """
-    for i in range(len(arr)):
+    for i in range(len(arr)-1):
+        nex_idx = i+1
+        min_idx = i
+        for j in range(nex_idx, len(arr)):
+            if (arr[j] < arr[min_idx]):
+                min_idx = j
+        if (arr[min_idx] < arr[i]):
+            arr[min_idx], arr[i] = arr[i], arr[min_idx]
+        print(arr)
+    return(arr)
+
+
+arr = [19, 48, 99, 71, 13, 52, 96, 73, 86, 7]
+selection_sort(arr)
+
+
+"""Also saw people referring to this as selection sort so i implented it also"""
+def selection_sort(arr):
+    for i in range(len(arr)-1):
         c_run = i
         for j in range(c_run+1, len(arr)):
             if arr[c_run] > arr[j]:
@@ -15,7 +33,3 @@ def selection_sort(arr):
                 c_run-1
         print(arr)
     return arr
-
-
-arr = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6]
-selection_sort(arr)
