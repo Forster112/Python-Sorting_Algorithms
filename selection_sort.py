@@ -6,6 +6,10 @@ def selection_sort(arr):
 
         Args:
             arr(list): The list to be sorted
+        
+        Best time complexity: O(n^2)
+        Average time complexity: O(n^2)
+        Worst time complexity: O(n^2)
     """
     for i in range(len(arr)-1):
         nex_idx = i+1

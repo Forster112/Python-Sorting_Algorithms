@@ -4,7 +4,12 @@ def bubblesort(arr):
           compares adjacent elements and swaps them if they are in the wrong order.
           The pass through the list is repeated until the list is sorted
         Arg:
-            arr(list): the list to be sorted"""
+            arr(list): the list to be sorted
+        
+        Best time complesity: O(n)    
+        Average time complesity: O(n^2)    
+        Worst time complesity: O(n^2)    
+        """
     for i in range(len(arr)):
         for j in range(len(arr)-1):
             if arr[j] > arr[j+1]:

@@ -4,6 +4,10 @@ def insertion_sort(lists):
 
         Args:
             lists(list): The list to be sorted
+        
+        Best time complexity: O(n)
+        Average time complexity: O(n^2)
+        Worst time complexity: O(n^2)
         """
     for i in range(0, len(lists)):
         current_index = i
