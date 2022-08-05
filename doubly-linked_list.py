@@ -20,7 +20,6 @@ class Solution:
             n = head
             while n.next is not None:
                 n = n.next
-                n.prev = n
             n.next = node
             node.prev = node
         return head
